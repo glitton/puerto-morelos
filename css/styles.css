@@ -68,6 +68,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--clr-grey-5);
 }
 img {
   width: 100%;
@@ -328,7 +329,7 @@ Featured Activities
   transition: var(--transition);
   background: var(--clr-grey-10);
   box-shadow: var(--light-shadow);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .activity-card:hover {
   box-shadow: var(--dark-shadow);
@@ -344,14 +345,15 @@ Featured Activities
 .activity-caption {
   position: absolute;
   right: 0;
-  margin-bottom: 0;
   color: var(--clr-primary-1);
   text-transform: capitalize;
-  padding: 0.25rem 0.5rem;
+  padding: 0 0.25rem;
   font-size: 0.7rem;
 }
 .activity-info {
-  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+}
+.activity-title {
   display: flex;
   align-items: baseline;
 }
@@ -364,15 +366,15 @@ Featured Activities
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 .activity-footer p {
   line-height: 0;
   margin-bottom: 0;
   text-transform: capitalize;
   color: var(--clr-primary-5);
+  font-size: 0.8rem;
 }
-
 @media screen and (min-width: 768px) {
   .featured-center {
     display: flex;
