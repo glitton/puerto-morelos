@@ -274,14 +274,16 @@ About
 }
 /*
 =============== 
-Services
+Services and Food
 ===============
 */
 
-.services {
+.services,
+.food {
   background: var(--clr-grey-10);
 }
-.service {
+.service,
+.food {
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -298,17 +300,39 @@ Services
   margin: 0 auto;
 }
 
+.food-icon {
+  background: var(--clr-primary-7);
+  border-radius: 50%;
+  color: var(--clr-primary-1);
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+}
+.food-list {
+  font-size: 0.85rem;
+  letter-spacing: 1.2px;
+}
+.food-link a {
+  color: var(--clr-grey-3);
+}
+
 @media screen and (min-width: 576px) {
-  .services-center {
+  .services-center,
+  .food-center {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .service {
+  .service,
+  .food {
     flex: 0 0 calc(50% - 1rem);
     margin-bottom: 1.5rem;
   }
-  .service-text {
+  .service-text,
+  .food-text {
     max-width: 14rem;
   }
 }
@@ -316,6 +340,13 @@ Services
 @media screen and (min-width: 992px) {
   .service {
     flex: 0 0 calc(25% - 1rem);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .food {
+    flex: 0 0 calc(33.333% - 1rem);
     margin-bottom: 0;
   }
 }
@@ -411,14 +442,11 @@ Gallery of Condo Pics
 }
 .gallery-img {
   width: 17rem;
-  height: 13rem;
+  height: 14rem;
   object-fit: cover;
   transition: var(--transition);
 }
-.gallery-img-container:hover .gallery-img {
-  transform: scale(1.5);
-  opacity: 1;
-}
+
 .gallery-title {
   margin-top: 2rem;
 }
@@ -431,6 +459,11 @@ Gallery of Condo Pics
   }
   .gallery-img-container {
     flex: 0 0 33.333%;
+  }
+  .gallery-img-container:hover,
+  .gallery-img:hover {
+    transform: scale(1.2);
+    z-index: 10;
   }
 }
 @media screen and (min-width: 992px) {
@@ -445,7 +478,7 @@ Gallery of Condo Pics
   }
   .gallery-img-container {
     flex: 1 0 25%;
-    transform: translate(10%, 0%);
+    transform: translate(5%, 0%);
   }
 }
 
@@ -461,7 +494,7 @@ Contact
   color: var(--clr-white);
 }
 .contact-title p {
-  color: var(--clr-grey-8);
+  color: var(--clr-grey-9);
   letter-spacing: 0.1rem;
 }
 .contact-form {
