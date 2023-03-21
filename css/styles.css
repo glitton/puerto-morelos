@@ -74,10 +74,10 @@ img {
   width: 100%;
   display: block;
 }
-/* img:not(.nav-logo) {
+img:not(.nav-logo) {
   width: 100%;
   display: block;
-} */
+}
 
 h1,
 h2,
@@ -175,6 +175,81 @@ p {
 Navbar
 ===============
 */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  z-index: 3;
+}
+.nav-logo-container {
+  position: relative;
+  height: 80px;
+}
+.nav-logo {
+  height: 50%;
+  position: relative;
+  /* top: 1rem; */
+  /* left: -2rem; */
+  /* margin-left: -3rem;
+  margin-top: -1.5rem; */
+}
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  margin-top: -1rem;
+  transition: var(--transition);
+}
+.nav-toggle:hover {
+  transform: scale(1.4);
+}
+.nav-links {
+  margin-top: -2rem;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-links {
+  height: 280px;
+}
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: var(--clr-grey-1);
+  cursor: pointer;
+  font-size: 1rem;
+}
+.nav-link:hover {
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
+  padding-left: 2.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  /* hide toggle button */
+  .nav-toggle {
+    display: none;
+  }
+}
 /*
 =============== 
 Hero
@@ -463,7 +538,7 @@ Gallery of Condo Pics
   .gallery-img-container:hover,
   .gallery-img:hover {
     transform: scale(1.2);
-    z-index: 10;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 992px) {
