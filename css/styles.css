@@ -393,6 +393,64 @@ Featured Activities
 
 /*
 =============== 
+Gallery of Condo Pics
+===============
+*/
+
+.gallery-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: var(--clr-grey-10);
+  padding: 1rem 0;
+}
+.gallery-img-container {
+  cursor: pointer;
+  transition: var(--transition);
+  margin: 0.5rem 0;
+}
+.gallery-img {
+  width: 17rem;
+  height: 13rem;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.gallery-img-container:hover .gallery-img {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.gallery-title {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery-img-container {
+    flex: 0 0 33.333%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .gallery-img-container {
+    flex: 1 0 25%;
+    transform: translate(10%, 0%);
+  }
+}
+
+/*
+=============== 
 Contact
 ===============
 */
@@ -404,6 +462,7 @@ Contact
 }
 .contact-title p {
   color: var(--clr-grey-8);
+  letter-spacing: 0.1rem;
 }
 .contact-form {
   display: flex;
@@ -439,6 +498,15 @@ Contact
   background: var(--clr-primary-1);
   color: var(--clr-primary-5);
 }
+.booking-icon {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+.booking-icon:hover {
+  color: #ff5a5f;
+}
 @media screen and (min-width: 992px) {
   .contact-center {
     display: flex;
@@ -452,62 +520,41 @@ Contact
     padding-left: 2rem;
   }
 }
-/*
-=============== 
-Gallery
-===============
-*/
-
-.gallery-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: var(--clr-grey-10);
-  padding: 1rem 0;
-}
-.gallery-img-container {
-  cursor: pointer;
-  transition: var(--transition);
-  margin: 0.5rem 0;
-}
-.gallery-img {
-  width: 17rem;
-  height: 13rem;
-  object-fit: cover;
-  transition: var(--transition);
-}
-.gallery-img-container:hover .gallery-img {
-  transform: scale(1.5);
-  opacity: 1;
-}
-@media screen and (min-width: 768px) {
-  .gallery-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .gallery-img-container {
-    flex: 0 0 33.333%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .gallery-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-evenly;
-    width: 90vw;
-    margin: 0 auto;
-  }
-  .gallery-img-container {
-    flex: 1 0 25%;
-    transform: translate(10%, 0%);
-  }
-}
 
 /*
 =============== 
 Footer
 ===============
 */
+
+.footer {
+  background: var(--clr-grey-1);
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-links,
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-right: 1rem;
+  letter-spacing: 0.15rem;
+  transition: var(--transition);
+}
+.footer-link:hover {
+  color: --clr-p;
+}
+.copyright {
+  text-transform: capitalize;
+  letter-spacing: 0.15rem;
+  color: var(--clr-white);
+}
