@@ -70,10 +70,7 @@ a {
   text-decoration: none;
   color: var(--clr-grey-5);
 }
-img {
-  width: 100%;
-  display: block;
-}
+
 img:not(.nav-logo) {
   width: 100%;
   display: block;
@@ -184,18 +181,6 @@ Navbar
   box-shadow: var(--dark-shadow);
   z-index: 3;
 }
-.nav-logo-container {
-  position: relative;
-  height: 80px;
-}
-.nav-logo {
-  height: 50%;
-  position: relative;
-  /* top: 1rem; */
-  /* left: -2rem; */
-  /* margin-left: -3rem;
-  margin-top: -1.5rem; */
-}
 .nav-center {
   width: 100%;
   max-width: 1170px;
@@ -213,7 +198,6 @@ Navbar
   font-size: 1.5rem;
   color: var(--clr-primary-5);
   cursor: pointer;
-  margin-top: -1rem;
   transition: var(--transition);
 }
 .nav-toggle:hover {
@@ -248,6 +232,13 @@ Navbar
   /* hide toggle button */
   .nav-toggle {
     display: none;
+  }
+  .nav-center {
+    display: flex;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
   }
 }
 /*
