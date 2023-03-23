@@ -181,6 +181,12 @@ Navbar
   box-shadow: var(--dark-shadow);
   z-index: 3;
 }
+.nav-icons {
+  display: none;
+}
+.nav-tooltip {
+  display: none;
+}
 .nav-center {
   width: 100%;
   max-width: 1170px;
@@ -203,14 +209,8 @@ Navbar
 .nav-toggle:hover {
   transform: scale(1.4);
 }
-.nav-links {
-  margin-top: -2rem;
-  height: 0;
-  overflow: hidden;
-  transition: var(--transition);
-}
-.show-links {
-  height: 280px;
+.nav-logo {
+  width: 14rem;
 }
 .nav-link {
   display: block;
@@ -227,18 +227,62 @@ Navbar
   background: var(--clr-primary-8);
   padding-left: 2.25rem;
 }
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-links {
+  height: 280px;
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0.8rem 0;
+  }
   /* hide toggle button */
   .nav-toggle {
     display: none;
   }
   .nav-center {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* optional */
+    flex-wrap: wrap;
   }
   .nav-links {
     height: auto;
     display: flex;
+    /* border: 1px solid red; */
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+  .nav-link {
+    padding: 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .nav-link:hover {
+    padding: 0;
+    color: var(--clr-primary-5);
+    background: transparent;
+  }
+  .nav-icons {
+    display: flex;
+    text-transform: capitalize;
+  }
+  .nav-icon {
+    margin-right: 1rem;
+    color: var(--clr-grey-3);
+    font-size: 1.7rem;
+    transition: var(--transition);
+  }
+
+  .nav-icon:hover {
+    color: #ff5a5f;
+    /* to do, add tooltip https://www.tutorialspoint.com/how-to-add-a-tooltip-to-a-div-using-javascript# */
   }
 }
 /*
@@ -383,6 +427,11 @@ Services and Food
 }
 .food-link a {
   color: var(--clr-grey-3);
+}
+
+.food-link a:hover {
+  color: var(--clr-primary-5);
+  font-weight: bold;
 }
 
 @media screen and (min-width: 576px) {
