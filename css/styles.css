@@ -182,12 +182,11 @@ Navbar
   box-shadow: var(--dark-shadow);
   z-index: 3;
 }
-.nav-icons {
-  display: none;
-}
+.nav-icons,
 .nav-tooltip {
   display: none;
 }
+
 .nav-center {
   width: 100%;
   max-width: 1170px;
@@ -286,7 +285,7 @@ Navbar
     display: flex;
     text-transform: capitalize;
   }
-  .nav-icon {
+  .nav-icons {
     margin-right: 1rem;
     color: var(--clr-grey-3);
     font-size: 1.7rem;
@@ -296,8 +295,25 @@ Navbar
 
   .nav-icon:hover {
     color: #ff5a5f;
+
     /* to do, add tooltip https://www.tutorialspoint.com/how-to-add-a-tooltip-to-a-div-using-javascript# */
   }
+
+  .nav-tooltip::after {
+    content: "check availability";
+    font-size: 0.7rem;
+    align-self: baseline;
+    display: flex;
+    margin-right: 10%;
+    border: 1px solid var(--clr-grey-5);
+    text-align: center;
+    border-radius: 10%;
+  }
+
+  /* .nav-icons:hover .nav-tooltip {
+    opacity: 1; */
+  /* transform: translateY(-10px); */
+  /* } */
 }
 /*
 =============== 
