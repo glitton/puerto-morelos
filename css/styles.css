@@ -680,21 +680,50 @@ Contact
 .contact {
   background: var(--clr-primary-5);
 }
-.contact-title {
+.contact-title,
+.contact-host-info {
   color: var(--clr-white);
 }
+
+.contact-host-text {
+  display: flex;
+  max-width: 90vw;
+}
+.contact-host-text p {
+  max-width: 34rem;
+}
+.contact-host-info img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 1rem 2rem 0 0;
+}
 .contact-title p {
-  color: var(--clr-grey-9);
+  color: var(--clr-primary-8);
   letter-spacing: 0.1rem;
 }
+.booking-icon {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+  color: var(--clr-white);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.booking-icon:hover {
+  color: #ff5a5f;
+}
 .contact-form {
-  display: -webkit-box;
   display: flex;
   max-width: 28rem;
+  flex-direction: column;
 }
-.form-control {
-  -webkit-box-flex: 1;
+/* .form-group {
   flex: 1 1 auto;
+  color: var(--clr-grey-5);
+} */
+.form-control {
+  flex: 1 1 auto;
+  margin: 0.2rem 0;
   color: var(--clr-grey-5);
 }
 .form-control,
@@ -708,44 +737,22 @@ Contact
   text-transform: capitalize;
   border: transparent;
 }
-.form-control::-webkit-input-placeholder {
-  color: inherit;
-}
-.form-control::-moz-placeholder {
-  color: inherit;
-}
-.form-control:-ms-input-placeholder {
-  color: inherit;
-}
-.form-control::-ms-input-placeholder {
-  color: inherit;
-}
 .form-control::placeholder {
   color: inherit;
 }
 .btn-submit {
   font-family: var(--ff-primary);
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
   background: var(--clr-primary-8);
   color: var(--clr-primary-1);
   cursor: pointer;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .btn-submit:hover {
   background: var(--clr-primary-1);
   color: var(--clr-primary-5);
 }
-.booking-icon {
-  font-size: 1.5rem;
-  margin-left: 0.3rem;
-  color: var(--clr-white);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-.booking-icon:hover {
-  color: #ff5a5f;
-}
+
 @media screen and (min-width: 992px) {
   .contact-center {
     display: -webkit-box;
