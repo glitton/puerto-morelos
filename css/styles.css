@@ -134,6 +134,7 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   /* font-weight: 700; */
+  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -193,8 +194,11 @@ Navbar
   margin: 0 auto;
 }
 .nav-header {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   padding: 1rem 2rem;
 }
@@ -204,9 +208,11 @@ Navbar
   font-size: 1.5rem;
   color: var(--clr-primary-5);
   cursor: pointer;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .nav-toggle:hover {
+  -webkit-transform: scale(1.4);
   transform: scale(1.4);
 }
 .nav-logo {
@@ -217,6 +223,7 @@ Navbar
   padding: 1rem 2rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
+  -webkit-transition: var(--transition);
   transition: var(--transition);
   color: var(--clr-grey-1);
   cursor: pointer;
@@ -230,6 +237,7 @@ Navbar
 .nav-links {
   height: 0;
   overflow: hidden;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .show-links {
@@ -245,14 +253,18 @@ Navbar
     display: none;
   }
   .nav-center {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
     align-items: center;
     /* optional */
     flex-wrap: wrap;
   }
   .nav-links {
     height: auto;
+    display: -webkit-box;
     display: flex;
     /* border: 1px solid red; */
   }
@@ -270,6 +282,7 @@ Navbar
     background: transparent;
   }
   .nav-icons {
+    display: -webkit-box;
     display: flex;
     text-transform: capitalize;
   }
@@ -277,6 +290,7 @@ Navbar
     margin-right: 1rem;
     color: var(--clr-grey-3);
     font-size: 1.7rem;
+    -webkit-transition: var(--transition);
     transition: var(--transition);
   }
 
@@ -294,8 +308,11 @@ Hero
 .hero {
   min-height: 100vh;
   background: var(--clr-primary-5);
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 .hero-banner {
@@ -328,6 +345,14 @@ Hero
 
 @media screen and (min-width: 768px) {
   .hero {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.7)),
+        to(rgb(44, 174, 186, 0.3))
+      ),
+      url("../images/main.jpeg") center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.3)),
       url("../images/main.jpeg") center/cover no-repeat;
   }
@@ -352,12 +377,15 @@ About
 }
 @media screen and (min-width: 992px) {
   .about-center {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   .about-img,
   .about-info {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(50% - 2rem);
     margin-bottom: 0;
     align-self: center;
@@ -437,12 +465,15 @@ Services and Food
 @media screen and (min-width: 576px) {
   .services-center,
   .food-center {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   .service,
   .food {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(50% - 1rem);
     margin-bottom: 1.5rem;
   }
@@ -454,6 +485,7 @@ Services and Food
 
 @media screen and (min-width: 992px) {
   .service {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(25% - 1rem);
     margin-bottom: 0;
   }
@@ -461,6 +493,7 @@ Services and Food
 
 @media screen and (min-width: 992px) {
   .food {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(33.333% - 1rem);
     margin-bottom: 0;
   }
@@ -472,6 +505,7 @@ Featured Activities
 ===============
 */
 .activity-card {
+  -webkit-transition: var(--transition);
   transition: var(--transition);
   background: var(--clr-grey-10);
   box-shadow: var(--light-shadow);
@@ -479,6 +513,7 @@ Featured Activities
 }
 .activity-card:hover {
   box-shadow: var(--dark-shadow);
+  -webkit-transform: scale(1.02);
   transform: scale(1.02);
 }
 .activity-img-container {
@@ -486,6 +521,7 @@ Featured Activities
 }
 .activity-img {
   height: 20rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .activity-caption {
@@ -500,7 +536,9 @@ Featured Activities
   padding: 1.25rem 1.5rem;
 }
 .activity-title {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: baseline;
   align-items: baseline;
 }
 .activity-icon {
@@ -509,9 +547,12 @@ Featured Activities
   padding: 0.2rem 0.3rem;
 }
 .activity-footer {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
 }
 .activity-footer p {
@@ -523,16 +564,20 @@ Featured Activities
 }
 @media screen and (min-width: 768px) {
   .featured-center {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
     justify-content: space-between;
   }
   .activity-card {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(50% - 2rem);
   }
 }
 @media screen and (min-width: 1170px) {
   .activity-card {
+    -webkit-box-flex: 0;
     flex: 0 0 calc(33.333% - 2rem);
   }
 }
@@ -544,21 +589,26 @@ Gallery of Condo Pics
 */
 
 .gallery-center {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
   justify-content: center;
   background: var(--clr-grey-10);
   padding: 1rem 0;
 }
 .gallery-img-container {
   cursor: pointer;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
   margin: 0.5rem 0;
 }
 .gallery-img {
   width: 17rem;
   height: 14rem;
+  -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -568,31 +618,40 @@ Gallery of Condo Pics
 
 @media screen and (min-width: 768px) {
   .gallery-center {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
     justify-content: center;
   }
   .gallery-img-container {
+    -webkit-box-flex: 0;
     flex: 0 0 33.333%;
   }
   .gallery-img-container:hover,
   .gallery-img:hover {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
     z-index: 2;
   }
 }
 @media screen and (min-width: 992px) {
   .gallery-center {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
     align-content: space-evenly;
     width: 90vw;
     margin: 0 auto;
   }
   .gallery-img-container {
+    -webkit-box-flex: 1;
     flex: 1 0 25%;
+    -webkit-transform: translate(5%, 0%);
     transform: translate(5%, 0%);
   }
 }
@@ -613,10 +672,12 @@ Contact
   letter-spacing: 0.1rem;
 }
 .contact-form {
+  display: -webkit-box;
   display: flex;
   max-width: 28rem;
 }
 .form-control {
+  -webkit-box-flex: 1;
   flex: 1 1 auto;
   color: var(--clr-grey-5);
 }
@@ -631,6 +692,18 @@ Contact
   text-transform: capitalize;
   border: transparent;
 }
+.form-control::-webkit-input-placeholder {
+  color: inherit;
+}
+.form-control::-moz-placeholder {
+  color: inherit;
+}
+.form-control:-ms-input-placeholder {
+  color: inherit;
+}
+.form-control::-ms-input-placeholder {
+  color: inherit;
+}
 .form-control::placeholder {
   color: inherit;
 }
@@ -640,6 +713,7 @@ Contact
   background: var(--clr-primary-8);
   color: var(--clr-primary-1);
   cursor: pointer;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .btn-submit:hover {
@@ -650,6 +724,7 @@ Contact
   font-size: 1.5rem;
   margin-left: 0.3rem;
   color: var(--clr-white);
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .booking-icon:hover {
@@ -657,12 +732,15 @@ Contact
 }
 @media screen and (min-width: 992px) {
   .contact-center {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
     justify-content: space-between;
   }
   .contact-form {
     align-self: flex-start;
+    -webkit-box-flex: 1;
     flex: 1 1 auto;
     max-width: 100%;
     padding-left: 2rem;
@@ -684,7 +762,9 @@ Footer
 
 .footer-links,
 .footer-icons {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
@@ -696,6 +776,7 @@ Footer
   font-size: 1rem;
   margin-right: 1rem;
   letter-spacing: 0.15rem;
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .footer-link:hover {
