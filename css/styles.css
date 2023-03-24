@@ -674,83 +674,96 @@ Gallery of Condo Pics
 
 /*
 =============== 
-Contact
+Book
 ===============
 */
-.contact {
-  background: var(--clr-primary-5);
+.book {
+  background: var(--clr-grey-10);
 }
-.contact-title,
+.your-hosts,
 .contact-host-info {
-  color: var(--clr-white);
+  color: var(--clr-primary-1);
+  text-align: center;
+  padding-top: 4rem;
 }
-
-.contact-host-text {
-  display: flex;
-  max-width: 90vw;
+.your-hosts-title span {
+  display: inline-block;
+  color: var(--clr-primary-5);
+  font-size: 1.2rem;
 }
-.contact-host-text p {
-  max-width: 34rem;
+.your-hosts-text {
+  max-width: 25rem;
+  /* border: 1px solid red; */
+  margin: 0 auto;
 }
-.contact-host-info img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  margin: 1rem 2rem 0 0;
+.your-hosts-text img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin: 0 auto;
 }
-.contact-title p {
-  color: var(--clr-primary-8);
-  letter-spacing: 0.1rem;
+.your-hosts-text p {
+  color: var(--clr-grey-5);
+  margin-top: 0.8rem;
+  letter-spacing: 0.08rem;
+}
+.contact {
+  text-align: center;
+  margin-top: 2rem;
+}
+.contact h3 {
+  padding-top: 0.5rem;
+  color: var(--clr-grey-5);
+  /* font-size: 1rem; */
+}
+.contact-form {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  max-width: 35rem;
+}
+.contact-form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 .booking-icon {
   font-size: 1.5rem;
   margin-left: 0.3rem;
-  color: var(--clr-white);
+  color: var(--clr-grey-1);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 .booking-icon:hover {
   color: #ff5a5f;
 }
-.contact-form {
-  display: flex;
-  max-width: 28rem;
-  flex-direction: column;
+
+.form-group {
+  padding: 0.7rem 1rem;
 }
-/* .form-group {
-  flex: 1 1 auto;
-  color: var(--clr-grey-5);
-} */
 .form-control {
-  flex: 1 1 auto;
+  display: block;
   margin: 0.2rem 0;
   color: var(--clr-grey-5);
-}
-.form-control,
-.btn-submit {
+  width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 300;
-  letter-spacing: var(--spacing);
-  background: var(--clr-white);
-  text-transform: capitalize;
+  margin-bottom: 1rem;
+  background: var(--clr-grey-10);
   border: transparent;
+  line-height: 1.2;
+  letter-spacing: var(--spacing);
+  font-family: var(--ff-primary);
+  border-radius: var(--radius);
 }
 .form-control::placeholder {
-  color: inherit;
+  color: var(--clr-grey-3);
 }
 .btn-submit {
-  font-family: var(--ff-primary);
-  /* margin-left: 0.5rem; */
-  background: var(--clr-primary-8);
-  color: var(--clr-primary-1);
-  cursor: pointer;
-  transition: var(--transition);
-}
-.btn-submit:hover {
-  background: var(--clr-primary-1);
-  color: var(--clr-primary-5);
+  width: 100%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  border: none;
 }
 
 @media screen and (min-width: 992px) {
