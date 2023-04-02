@@ -270,6 +270,9 @@ Navbar
   .nav-header {
     padding: 0 0;
   }
+  .nav-logo {
+    padding-left: 1rem;
+  }
   .nav-link {
     padding: 0;
     margin-right: 2rem;
@@ -770,8 +773,8 @@ Book
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   border: none;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   background: var(--clr-primary-5);
   border-bottom-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
@@ -780,8 +783,30 @@ Book
 }
 .btn-submit:hover {
   background: var(--clr-primary-8);
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
+  .book {
+    margin: 4rem 0rem;
+    width: 100vw;
+  }
+
+  .your-hosts-text {
+    display: flex;
+    max-width: 100%;
+    margin: 0 0;
+    align-items: center;
+  }
+  .your-hosts-text p {
+    max-width: 30%;
+  }
+  .your-hosts-text img {
+    margin: 2rem 6rem 2rem 10rem;
+  }
+  .contact {
+    padding-top: 64px;
+    margin: 0 auto;
+  }
   .contact-center {
     display: -webkit-box;
     display: flex;
@@ -793,8 +818,9 @@ Book
     align-self: flex-start;
     -webkit-box-flex: 1;
     flex: 1 1 auto;
-    max-width: 100%;
-    padding-left: 2rem;
+    max-width: 70%;
+    margin-top: 2rem;
+    padding: 2rem;
   }
 }
 
