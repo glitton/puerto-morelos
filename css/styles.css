@@ -803,6 +803,19 @@ Book
   background: var(--clr-primary-8);
   width: 100%;
 }
+.form-submit {
+  position: absolute;
+  margin-top: -14.5rem;
+  margin-left: 3.5rem;
+  max-width: 25rem;
+  background: var(--clr-grey-1);
+  border-radius: var(--radius);
+
+  padding: 2rem;
+}
+.form-submit h3 {
+  color: var(--clr-white);
+}
 @media screen and (min-width: 992px) {
   .book {
     margin: 4rem 0rem;
