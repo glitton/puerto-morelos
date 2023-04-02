@@ -712,13 +712,31 @@ Book
   color: var(--clr-grey-5);
   letter-spacing: 0.08rem;
 }
+.location {
+  text-align: center;
+  margin: 2rem 1.5rem;
+  border: ;
+}
+.location img {
+  height: 20rem;
+  width: 28rem;
+  margin: 0 auto;
+  border: 1px solid var(--clr-grey-7);
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+}
+.location p {
+  max-width: 25rem;
+  letter-spacing: 0.08rem;
+  margin: 0.8rem auto;
+}
 .contact {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .contact h3 {
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-1);
   margin-bottom: 0;
 }
 .contact-form {
@@ -802,6 +820,16 @@ Book
   }
   .your-hosts-text img {
     margin: 2rem 6rem 2rem 10rem;
+  }
+  .location-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 3rem 0 2.5rem 2.5rem;
+  }
+
+  .location-info p {
+    margin-left: 0;
   }
   .contact {
     padding-top: 64px;
