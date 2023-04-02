@@ -810,7 +810,6 @@ Book
   max-width: 25rem;
   background: var(--clr-grey-1);
   border-radius: var(--radius);
-
   padding: 2rem;
 }
 .form-submit h3 {
@@ -862,6 +861,11 @@ Book
     max-width: 70%;
     margin-top: 2rem;
     padding: 2rem;
+  }
+  .form-submit {
+    position: absolute;
+    margin-left: 18rem;
+    max-width: 35rem;
   }
 }
 
