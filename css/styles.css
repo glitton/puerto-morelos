@@ -681,7 +681,7 @@ Book
 ===============
 */
 .book {
-  background: var(--clr-grey-10);
+  /* background: var(--clr-grey-10); */
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
@@ -714,8 +714,6 @@ Book
 }
 .location {
   text-align: center;
-  margin: 2rem 1.5rem;
-  border: ;
 }
 .location img {
   height: 20rem;
@@ -728,7 +726,13 @@ Book
 .location p {
   max-width: 25rem;
   letter-spacing: 0.08rem;
-  margin: 0.8rem auto;
+  margin: 0 auto;
+}
+.location a {
+  color: var(--clr-primary-5);
+}
+.location a:hover {
+  color: var(--clr-primary-3);
 }
 .contact {
   text-align: center;
@@ -817,7 +821,7 @@ Book
 }
 @media screen and (min-width: 992px) {
   .book {
-    margin: 4rem 0rem;
+    margin: 0 auto;
     width: 100vw;
   }
 
