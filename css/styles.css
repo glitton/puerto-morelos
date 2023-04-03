@@ -95,11 +95,12 @@ h3 {
   font-size: 1.25rem;
 }
 h4 {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
+  font-size: 1rem;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -122,6 +123,9 @@ p {
   h3,
   h4 {
     line-height: 1;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 /*  global classes */
@@ -226,7 +230,7 @@ Navbar
   transition: var(--transition);
   color: var(--clr-grey-1);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .nav-link:hover {
   color: var(--clr-primary-1);
@@ -302,7 +306,7 @@ Navbar
     /* to do, add tooltip https://www.tutorialspoint.com/how-to-add-a-tooltip-to-a-div-using-javascript# */
   }
 
-  .nav-tooltip::after {
+  /* .nav-tooltip::after {
     content: "check availability";
     font-size: 0.7rem;
     align-self: baseline;
@@ -311,7 +315,7 @@ Navbar
     border: 1px solid var(--clr-grey-5);
     text-align: center;
     border-radius: 10%;
-  }
+  } */
 
   /* .nav-icons:hover .nav-tooltip {
     opacity: 1; */
@@ -341,7 +345,6 @@ Hero
 }
 .hero-banner h1 {
   text-transform: uppercase;
-  /* font-size: 3.5rem; */
 }
 .hero-banner p {
   max-width: 35rem;
@@ -469,7 +472,7 @@ Services and Food
   width: 4rem;
 }
 .food-list {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   letter-spacing: 1.2px;
 }
 .food-link a {
