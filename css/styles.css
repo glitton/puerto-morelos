@@ -727,6 +727,7 @@ Book
   max-width: 25rem;
   letter-spacing: 0.08rem;
   margin: 0 auto;
+  padding: 1rem;
 }
 .location a {
   color: var(--clr-primary-5);
@@ -788,6 +789,7 @@ Book
 }
 .form-control::placeholder {
   color: var(--clr-grey-3);
+  font-size: 0.8rem;
 }
 .btn-submit {
   width: 100%;
