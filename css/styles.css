@@ -186,11 +186,21 @@ Navbar
   box-shadow: var(--dark-shadow);
   z-index: 3;
 }
-.nav-icons,
-.nav-tooltip {
+.nav-icons {
   display: none;
+  position: relative;
 }
-
+.nav-tooltiptext {
+  visibility: hidden;
+  color: var(--clr-grey-5);
+  font-size: 0.9rem;
+  position: absolute;
+  padding-left: 0.5rem;
+  transition: var(--transition);
+}
+.nav-icons:hover .nav-tooltiptext {
+  visibility: visible;
+}
 .nav-center {
   width: 100%;
   max-width: 1170px;
