@@ -710,6 +710,7 @@ Book
   object-fit: cover;
   border-radius: var(--radius);
   margin: 2rem auto 1rem auto;
+  box-shadow: var(--dark-shadow);
 }
 .your-hosts-text p {
   color: var(--clr-grey-5);
