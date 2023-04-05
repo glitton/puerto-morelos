@@ -189,6 +189,8 @@ Navbar
 .nav-icons {
   display: none;
   position: relative;
+  width: 180px;
+  /* border: 1px solid red; */
 }
 .nav-tooltiptext {
   visibility: hidden;
@@ -197,9 +199,12 @@ Navbar
   position: absolute;
   padding-left: 0.5rem;
   transition: var(--transition);
+  top: 10px;
+  left: 30px;
 }
 .nav-icons:hover .nav-tooltiptext {
   visibility: visible;
+  transform: scale(1.1);
 }
 .nav-center {
   width: 100%;
