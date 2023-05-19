@@ -506,7 +506,6 @@ Services and Food
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
   .service,
   .food {
@@ -531,7 +530,8 @@ Services and Food
 @media screen and (min-width: 992px) {
   .food {
     -webkit-box-flex: 0;
-    flex: 0 0 calc(33.333% - 1rem);
+    /* flex: 0 0 calc(33.333% - 1rem); */
+    flex: 0 0 auto;
     margin-bottom: 0;
   }
 }
